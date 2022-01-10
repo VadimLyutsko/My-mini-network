@@ -1,0 +1,22 @@
+.nav {
+        background-color: rgb(158, 158, 202);
+      }
+
+.item {
+    color: white; 
+  }
+
+.friendsImg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+
+
+.active {
+    color: gold;
+  }
+
+a{
+  text-decoration: none;
+}
