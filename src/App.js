@@ -29,7 +29,6 @@ const App = (props) => {
             dispatch={props.dispatch} />} />
         </Routes>
       </div>
-
     </div>
 
   );
