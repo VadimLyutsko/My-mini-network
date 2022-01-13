@@ -1,22 +1,22 @@
-import { sendMessageCreator, updateNewMessageBodyCreator } from '../../Redux/dialogs-reducer.js';
 import sss from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
 
 
 const Dialogs = (props) => {
+    let state = props.dialogsPage;
 
-    let messageElement = props.state.dialogsPage.messages.map(m => <Message message={m.message} />);
-    let dialogElement = props.state.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+    let messageElement = state.messages.map(m => <Message message={m.message} />);
+    let dialogElement = state.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
 
 
     let onSendMessageClick = () => {
-        props.dispatch(sendMessageCreator());
+        props.sendMessage();
     }
 
     let onNewMessageChange = (e) => {
         let body = e.target.value;
-        props.dispatch(updateNewMessageBodyCreator(body));
+        props.updateNewMessageBody(body);
     }
 
     return (
@@ -34,7 +34,7 @@ const Dialogs = (props) => {
                         placeholder='Введи что-нибудь'
 
                         onChange={onNewMessageChange}
-                        value={props.state.dialogsPage.newMessageText} />
+                        value={state.newMessageText} />
                 </div>
                 <div>
                     <button onClick={onSendMessageClick}>Нажми меня!</button>
