@@ -11,7 +11,7 @@ const NavFriends = (props) => {
                     <h3>Friends</h3>
                     <div>
                         <img className={sss.friendsImg} src={props.state.navBar[0]['image']} alt='' />
-                        <div>{props.state.navBar[0]['name']}</div>
+                        <div >{props.state.navBar[0]['name']}</div>
                     </div>
                     <div>
                         <img className={sss.friendsImg} src={props.state.navBar[1]['image']} alt='' />
@@ -21,10 +21,6 @@ const NavFriends = (props) => {
                         <img className={sss.friendsImg} src={props.state.navBar[2]['image']} alt='' />
                         <div>{props.state.navBar[0]['name']}</div>
                     </div>
-
-
-
-
 
                 </NavLink>
             </div>

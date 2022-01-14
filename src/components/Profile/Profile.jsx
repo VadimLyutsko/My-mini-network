@@ -7,16 +7,12 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
 const Profile = (props) => {
-    debugger;
-
 
     return (
         <div className={sss.content}>
 
             <ProfileInfo />
-            <MyPostsContainer
-                store={props.store}
-            />
+            <MyPostsContainer />
 
         </div>
     );

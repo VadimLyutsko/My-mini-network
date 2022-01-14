@@ -34,7 +34,7 @@ const Dialogs = (props) => {
                         placeholder='Введи что-нибудь'
 
                         onChange={onNewMessageChange}
-                        value={state.newMessageText} />
+                        value={props.newMessageText} />
                 </div>
                 <div>
                     <button onClick={onSendMessageClick}>Нажми меня!</button>

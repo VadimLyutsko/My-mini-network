@@ -5,30 +5,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 
-let rerenderEntireTree = (state) => {     // отрисовки при изменении UI
-    ReactDOM.render(
-        <BrowserRouter>
+// отрисовки при изменении UI
+ReactDOM.render(
+    <BrowserRouter>
+        <Provider store={store} >
             <React.StrictMode>
-                <App
-                    store={store}
-                    state={state}
-                    dispatch={store.dispatch.bind(store)}
-                />
+                <App />
             </React.StrictMode>
-        </BrowserRouter>,
-        document.getElementById('root')
-    );
-}
+        </Provider >
+    </BrowserRouter>,
+    document.getElementById('root')
+);
 
 
-rerenderEntireTree(store.getState());      //первая отрисовка (до изменения UI)
 
-store.subscribe(() => {
-    let state = store.getState();
-    rerenderEntireTree(state);
-});                            // отдали rerenderEntireTree для вызова в State 
+//rerenderEntireTree();      //первая отрисовка (до изменения UI)
+
+//store.subscribe(() => {
+//  rerenderEntireTree();
+//});                            // отдали rerenderEntireTree для вызова в State 
 
 
 
