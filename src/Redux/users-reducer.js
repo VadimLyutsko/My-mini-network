@@ -31,8 +31,8 @@ const usersReducer = (state = initialState, action) => {
             }
         case SET_USERS:
             return {
-                // ...state, users: [...state.users, ...action.users]      как у препода, дубляж
-                ...state, users: [...action.users]      //  у меня 
+                ...state, users: [...state.users, ...action.users]     // как у препода, дубляж
+                //  ...state, users: [...action.users]      //  у меня 
             }
         default:
             return state;
