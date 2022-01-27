@@ -1,9 +1,7 @@
+.item {
+  color: rgb(56, 107, 151);
+}
 
-
-  .item {
-    color: rgb(56, 107, 151);
-  }
-  
-  .item img {
+.item img {
   max-width: 10%;
 }

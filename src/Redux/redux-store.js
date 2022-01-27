@@ -5,10 +5,10 @@ import profileReducer from "./profile-reducer";
 import usersReducer from "./users-reducer";
 
 let reducers = combineReducers({
-    profilePage: profileReducer,
-    dialogsPage: dialogsReducer,
-    navBar: navBarReducer,
-    usersPage: usersReducer
+  profilePage: profileReducer,
+  dialogsPage: dialogsReducer,
+  navBar: navBarReducer,
+  usersPage: usersReducer,
 });
 
 let store = createStore(reducers);

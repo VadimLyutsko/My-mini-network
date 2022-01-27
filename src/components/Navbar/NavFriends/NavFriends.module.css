@@ -1,27 +1,24 @@
 .nav {
-        background-color: rgb(158, 158, 202);
-        
-      }
+  background-color: rgb(158, 158, 202);
+}
 
 .item {
-  
-    color: white; 
-  }
+  color: white;
+}
 
-.friendsImg{margin-left: auto;
-    margin-right: auto;
+.friendsImg {
+  margin-left: auto;
+  margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
   border-radius: 100%;
 }
 
-
 .active {
-    color: gold;
-  }
-
-a{
-  text-decoration: none;
+  color: gold;
 }
 
+a {
+  text-decoration: none;
+}

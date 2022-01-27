@@ -1,11 +1,8 @@
+.header {
+  grid-area: h;
+  background-color: green;
+}
 
-.header{
-    grid-area: h;
-    background-color: green;
-    }
-    
-    .header img{
-      width: 65px;
-    }
-
-    
+.header img {
+  width: 65px;
+}

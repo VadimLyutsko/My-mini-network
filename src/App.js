@@ -1,23 +1,18 @@
 //import logo1 from './logo.svg';
 import { Routes, Route } from "react-router-dom";
-import './App.css';
+import "./App.css";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
+import Profile from "./components/Profile/Profile";
 import UsersContainer from "./components/Users/UsersContainer";
 
-
-
-const App = (props) => {
-
-
+const App = props => {
   return (
-
-    <div className='app-wrapper'>
+    <div className="app-wrapper">
       <Header />
       <Navbar state={props.state} />
-      <div className='app-wrapper-content'>
+      <div className="app-wrapper-content">
         <Routes>
           <Route path="/messages/*" element={<DialogsContainer />} />
           <Route path="/profile" element={<Profile />} />
@@ -25,17 +20,7 @@ const App = (props) => {
         </Routes>
       </div>
     </div>
-
   );
-}
-
-
-
-
-
-
-
+};
 
 export default App;
-
-
