@@ -27,7 +27,7 @@ class Users extends React.Component {
     }
 
     return (
-      <div>
+      <div className={styles.bgf}>
         <div>
           {pages.map(p => {
             return (

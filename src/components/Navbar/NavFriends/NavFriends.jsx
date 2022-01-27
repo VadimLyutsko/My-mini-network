@@ -13,18 +13,8 @@ const NavFriends = props => {
               {props.state.navBar[0]["name"]}
             </div>
           </div>
-          <div>
-            <img className={sss.friendsImg} src={props.state.navBar[1]["image"]} alt="" />
-            <div>
-              {props.state.navBar[0]["name"]}
-            </div>
-          </div>
-          <div>
-            <img className={sss.friendsImg} src={props.state.navBar[2]["image"]} alt="" />
-            <div>
-              {props.state.navBar[0]["name"]}
-            </div>
-          </div>
+
+          <div />
         </NavLink>
       </div>
     </nav>

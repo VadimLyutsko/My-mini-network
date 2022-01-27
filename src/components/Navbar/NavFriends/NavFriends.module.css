@@ -1,5 +1,5 @@
 .nav {
-  background-color: rgb(158, 158, 202);
+  background-color: #1b1b1d;
 }
 
 .item {
@@ -11,12 +11,12 @@
   margin-right: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+  width: 100px;
   border-radius: 100%;
 }
 
 .active {
-  color: gold;
+  color: rgb(87, 201, 230);
 }
 
 a {

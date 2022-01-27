@@ -1,8 +1,15 @@
 .header {
   grid-area: h;
-  background-color: green;
+  background-color: #000000;
 }
 
 .header img {
   width: 65px;
+}
+
+.header p {
+  color: #e5e5e6;
+  font-family: Courier New;
+  font-weight: bold;
+  margin-left: 55px;
 }

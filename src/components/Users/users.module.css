@@ -6,3 +6,7 @@
 .selectedPage {
   font-weight: bold;
 }
+
+.bgf {
+  background-color: rgb(62, 139, 158);
+}
